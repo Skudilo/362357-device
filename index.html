@@ -1,12 +1,356 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>device</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic-ext" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'GilroyExtraBold';
+      src: url(fonts/gilroy/Gilroyextrabold.ttf);
+    }
+    
+    @font-face {
+      font-family: 'GilroyLight';
+      src: urL(fonts/gilroy/Gilroylight.ttf)
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  </body>
+<body>
+  <header class="main-header container">
+    <a class="header-logo">device</a>
+    <div class="header-top">
+      <form class="header-search" action="#" method="get">
+        <input type="search" name="search" placeholder="Поиск по сайту">
+        <button class="header-search-btn" type="button">Найти</button>
+      </form>
+      <a href="#" class="login">Войти</a>
+      <a href="#" class="compare">Сравнить</a>
+      <a href="#" class="bascket">Корзина</a>
+    </div>
+    <ul class="header-nav">
+      <li><a>Каталог товаров</a>
+        <div class="sub-menu">
+          <ul>
+            <li>
+              <a href="#">Виртуальная реальность</a>
+            </li>
+            <li>
+              <a href="catalog.html">Моноподы для селфи</a>
+            </li>
+            <li>
+              <a href="#">Экшн-камеры</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">Фитнес-браслеты</a>
+            </li>
+            <li>
+              <a href="#">Умные часы</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Гарантия</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+  </header>
+  <main>
+    <div class="slider container">
+      <input type="radio" name="slider" id="btn-1" checked>
+      <input type="radio" name="slider" id="btn-2">
+      <input type="radio" name="slider" id="btn-3">
+      <div class="slider-controls">
+        <label for="btn-1"></label>
+        <label for="btn-2"></label>
+        <label for="btn-3"></label>
+      </div>
+      <div class="slides">
+        <div class="slide">
+          <div class="slide-img">
+            <img src="img/slider-1.png" alt="палка для селфи">
+          </div>
+          <div class="description">
+            <span class="description-number">01</span>
+            <h2 class="descripton-title">Делай селфи, <br> как Бен Стиллер!</h2>
+            <p class="description-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <a href="#" class="btn description-btn">Подробнее</a>
+            <ul class="description-features">
+              <li>
+                <span>8,5 м</span>
+                <p>Длина палки</p>
+              </li>
+              <li>
+                <span>5 кг</span>
+                <p>Вес палки</p>
+              </li>
+              <li>
+                <span>Карбон</span>
+                <p>Материал</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-img">
+            <img src="img/slider-2.png" alt="фитнес-браслеты">
+          </div>
+          <div class="description">
+            <span class="description-number">02</span>
+            <h2 class="descripton-title">Худеем <br> правильно!</h2>
+            <p class="description-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <a href="#" class="btn description-btn">Подробнее</a>
+            <ul class="description-features">
+              <li>
+                <span>48 часов</span>
+                <p>Без подзарядки</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-img">
+            <img src="img/slider-3.png" alt="палка для селфи">
+          </div>
+          <div class="description">
+            <span class="description-number">03</span>
+            <h2 class="descripton-title">Порхает как бабочка, жалит как пчела!</h2>
+            <p class="description-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру</p>
+            <a href="#" class="btn description-btn">Подробнее</a>
+            <ul class="description-features">
+              <li>
+                <span>800 м</span>
+                <p>Дальность полета</p>
+              </li>
+              <li>
+                <span>50 м</span>
+                <p>Радиус поражения</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popular container">
+      <a href="#" class="popular-item">
+        <div class="popular-img">
+          <img src="img/popular-1.png" alt="">
+        </div>
+        Виртуальная реальность
+      </a>
+      <a href="#" class="popular-item">
+        <div class="popular-img">
+          <img src="img/popular-2.png" alt="">
+        </div>
+        Моноподы <br> для селфи
+      </a>
+      <a href="#" class="popular-item">
+        <div class="popular-img">
+          <img src="img/popular-3.png" alt="">
+        </div>
+        Экшн-камеры
+      </a>
+      <a href="#" class="popular-item">
+        <div class="popular-img">
+          <img src="img/popular-4.png" alt="">
+        </div>
+        Фитнес-браслеты
+      </a>
+      <a href="#" class="popular-item">
+        <div class="popular-img">
+          <img src="img/popular-5.png" alt="">
+        </div>
+        Умные часы
+      </a>
+      <a href="#" class="popular-item">
+        <div class="popular-img">
+          <img src="img/popular-6.png" alt="">
+        </div>
+        Квадрокоптеры
+      </a>
+    </div>
+    <div class="services">
+      <div class="container">
+        <input type="radio" name="services" id="services-btn-1" checked>
+        <input type="radio" name="services" id="services-btn-2">
+        <input type="radio" name="services" id="services-btn-3">
+        <ul class="services-btn">
+          <li>
+            <label class="btn" for="services-btn-1">Доставка</label>
+          </li>
+          <li>
+            <label class="btn" for="services-btn-2">Гарантия</label>
+          </li>
+          <li>
+            <label class="btn" for="services-btn-3">Кредит</label>
+          </li>
+        </ul>
+        <div class="services-description">
+          <div class="service service-1">
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+          <div class="service service-2">
+            <h2>Гарантия</h2>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.</p>
+          </div>
+          <div class="service service-3">
+            <h2>Кредит</h2>
+            <p>Залезть в долговую яму стало проще! Кредитные <br> консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="logotypes container">
+      <a href="#">
+        <img src="img/logo-1.png" alt="dji">
+      </a>
+      <a href="#">
+        <img src="img/logo-2.png" alt="spgadjets">
+      </a>
+      <a href="#">
+        <img src="img/logo-3.png" alt="gopro">
+      </a>
+      <a href="#">
+        <img src="img/logo-4.png" alt="vive">
+      </a>
+    </div>
+    <div class="info container">
+      <div class="about-us">
+        <h2>О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <ul>
+          <li>Деловые Линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="#" class="btn about-us-btn">Подробнее о нас</a>
+      </div>
+      <div class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <a href="#" class="map-open">
+          <img    src="img/map-mini.jpg" alt="мини-карта">
+        </a>
+        <a href="#" class="btn contacts-btn">Нaпишите нам</a>
+      </div>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#" class="footer-logo">DEVICE</a>
+        <div class="footer-user-block">
+          <a href="#" class="login">Войти</a>
+          <a href="#" class="compare">Сравнить</a>
+          <a href="#" class="bascket">Корзина</a>
+        </div>
+      </div>
+      <div class="footer-middle">
+        <span>г. Москва, ул. Строителей, 15 </span>
+        <ul class="footer-middle-nav">
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <span>Тел.: +7 (495) 495-95-95</span>
+      </div>
+      <div class="footer-bottom">
+        <div class="yellow-block"></div>
+        <ul class="footer-bottom-social">
+          <li>
+            <a class="fb" href="#">facebook</a>
+          </li>
+          <li>
+            <a class="inst" href="#">instagram</a>
+          </li>
+          <li>
+            <a class="tw" href="#">twitter</a>
+          </li>
+        </ul>
+        <a href="" class="copyright-logo">html academy</a>
+      </div>
+    </div>
+  </footer>
+  <div class="modal-content">
+    <button type="submit" class="modal-content-close" title="закрыть">Закрыть</button>
+    <form class="modal-content-form" action="#" method="get">
+      <label>
+        Ваше имя:
+        <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" autofocus required>
+      </label>
+      <label>
+        Для отправки ответа
+        <input type="text" id="mail" name="mail" placeholder="Для отправки ответа" required>
+      </label>
+      <label>
+        Текст письма: 
+        <textarea id="letter" name="letter" placeholder="В свободной форме" required></textarea>
+      </label>
+      <button class="btn modal-content-btn" type="submit">отправить</button>
+    </form>
+  </div>
+  <div class="modal-content-map">
+    <button type="submit" class="modal-content-close" title="закрыть">Закрыть</button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488834928!2d37.52742395186068!3d55.68703098044027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1503309863829" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+</body>
+<script>
+  var openLink = document.querySelector(".contacts-btn");
+  var popup = document.querySelector(".modal-content");
+  var closeLink = document.querySelector(".modal-content-close");
+
+
+  openLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    popup.classList.add("modal-content-show");
+  });
+  
+  closeLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    popup.classList.remove("modal-content-show")
+  });
+  
+  window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("modal-content-show")) {
+            popup.classList.remove("modal-content-show");
+          }
+        }
+      });
+ 
+  var mapOpen = document.querySelector(".map-open");
+  var mapPopup = document.querySelector(".modal-content-map");
+  var mapClose =  mapPopup.querySelector(".modal-content-close");
+  
+  mapOpen.addEventListener("click", function(event) {
+    event.preventDefault();
+    mapPopup.classList.add("modal-content-show")
+  })
+  
+  mapClose.addEventListener("click", function(event){
+    event.preventDefault();
+    mapPopup.classList.remove("modal-content-show")
+  })
+  
+</script>
 </html>
