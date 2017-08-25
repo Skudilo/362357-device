@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>device</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic-ext">
   <style>
     @font-face {
       font-family: 'GilroyExtraBold';
@@ -13,10 +13,11 @@
     
     @font-face {
       font-family: 'GilroyLight';
-      src: urL(fonts/gilroy/Gilroylight.ttf)
+      src: url(fonts/gilroy/Gilroylight.ttf)
     }
   </style>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">    
+  <link rel="stylesheet" href="css/style-min.css">
 </head>
 
 <body>
@@ -78,7 +79,7 @@
       <div class="slides">
         <div class="slide">
           <div class="slide-img">
-            <img src="img/slider-1.png" alt="палка для селфи">
+            <img src="img/slider-1.png" alt="палка для селфи" width="384" height="486">
           </div>
           <div class="description">
             <span class="description-number">01</span>
@@ -104,7 +105,7 @@
 
         <div class="slide">
           <div class="slide-img">
-            <img src="img/slider-2.png" alt="фитнес-браслеты">
+            <img src="img/slider-2.png" alt="фитнес-браслеты" width="345" height="485">>
           </div>
           <div class="description">
             <span class="description-number">02</span>
@@ -122,7 +123,7 @@
 
         <div class="slide">
           <div class="slide-img">
-            <img src="img/slider-3.png" alt="палка для селфи">
+            <img src="img/slider-3.png" alt="палка для селфи" width="526" height="334">
           </div>
           <div class="description">
             <span class="description-number">03</span>
@@ -146,37 +147,37 @@
     <div class="popular container">
       <a href="#" class="popular-item">
         <div class="popular-img">
-          <img src="img/popular-1.png" alt="">
+          <img src="img/popular-1.png" alt="Виртуальная реальность"  width="97" height="55">
         </div>
         Виртуальная реальность
       </a>
       <a href="#" class="popular-item">
         <div class="popular-img">
-          <img src="img/popular-2.png" alt="">
+          <img src="img/popular-2.png" alt="Моноподы для селфи" width="86" height="117">
         </div>
         Моноподы <br> для селфи
       </a>
       <a href="#" class="popular-item">
         <div class="popular-img">
-          <img src="img/popular-3.png" alt="">
+          <img src="img/popular-3.png" alt="Экшн-камеры" width="71" height="87">
         </div>
         Экшн-камеры
       </a>
       <a href="#" class="popular-item">
         <div class="popular-img">
-          <img src="img/popular-4.png" alt="">
+          <img src="img/popular-4.png" alt="Фитнес-браслеты" width="107" height="65">
         </div>
         Фитнес-браслеты
       </a>
       <a href="#" class="popular-item">
         <div class="popular-img">
-          <img src="img/popular-5.png" alt="">
+          <img src="img/popular-5.png" alt="Умные часы" width="56" height="98">
         </div>
         Умные часы
       </a>
       <a href="#" class="popular-item">
         <div class="popular-img">
-          <img src="img/popular-6.png" alt="">
+          <img src="img/popular-6.png" alt="Квадрокоптеры" width="132" height="69">
         </div>
         Квадрокоптеры
       </a>
@@ -215,37 +216,37 @@
     </div>
     <div class="logotypes container">
       <a href="#">
-        <img src="img/logo-1.png" alt="dji">
+        <img src="img/logo-1.png" alt="dji" width="260" height="100">
       </a>
       <a href="#">
-        <img src="img/logo-2.png" alt="spgadjets">
+        <img src="img/logo-2.png" alt="spgadjets" width="260" height="100">
       </a>
       <a href="#">
-        <img src="img/logo-3.png" alt="gopro">
+        <img src="img/logo-3.png" alt="gopro" width="260" height="100">
       </a>
       <a href="#">
-        <img src="img/logo-4.png" alt="vive">
+        <img src="img/logo-4.png" alt="vive" width="260" height="100">
       </a>
     </div>
     <div class="info container">
       <div class="about-us">
         <h2>О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
         <ul>
           <li>Деловые Линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="#" class="btn about-us-btn">Подробнее о нас</a>
+        <a href="#" class="btn asbout-us-btn">Подробнее о нас</a>
       </div>
       <div class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a href="#" class="map-open">
-          <img    src="img/map-mini.jpg" alt="мини-карта">
+        <a href="map.html" class="map-open">
+          <img src="img/map-mini.jpg" alt="мини-карта" width="560" height="222">
         </a>
-        <a href="#" class="btn contacts-btn">Нaпишите нам</a>
+        <a href="writeus.html" class="btn contacts-btn">Нaпишите нам</a>
       </div>
     </div>
   </main>
@@ -287,7 +288,7 @@
             <a class="tw" href="#">twitter</a>
           </li>
         </ul>
-        <a href="" class="copyright-logo">html academy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-logo">html academy</a>
       </div>
     </div>
   </footer>
@@ -311,46 +312,8 @@
   </div>
   <div class="modal-content-map">
     <button type="submit" class="modal-content-close" title="закрыть">Закрыть</button>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488834928!2d37.52742395186068!3d55.68703098044027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1503309863829" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488834928!2d37.52742395186068!3d55.68703098044027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1503309863829" width="960" height="560"  style="border:0" allowfullscreen></iframe>
   </div>
+  <script src="js/scripts-min.js"></script>
 </body>
-<script>
-  var openLink = document.querySelector(".contacts-btn");
-  var popup = document.querySelector(".modal-content");
-  var closeLink = document.querySelector(".modal-content-close");
-
-
-  openLink.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.add("modal-content-show");
-  });
-  
-  closeLink.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.remove("modal-content-show")
-  });
-  
-  window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (popup.classList.contains("modal-content-show")) {
-            popup.classList.remove("modal-content-show");
-          }
-        }
-      });
- 
-  var mapOpen = document.querySelector(".map-open");
-  var mapPopup = document.querySelector(".modal-content-map");
-  var mapClose =  mapPopup.querySelector(".modal-content-close");
-  
-  mapOpen.addEventListener("click", function(event) {
-    event.preventDefault();
-    mapPopup.classList.add("modal-content-show")
-  })
-  
-  mapClose.addEventListener("click", function(event){
-    event.preventDefault();
-    mapPopup.classList.remove("modal-content-show")
-  })
-  
-</script>
 </html>

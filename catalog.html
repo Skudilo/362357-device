@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>catalog</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic-ext">
   <style>
     @font-face {
       font-family: 'GilroyExtraBold';
@@ -13,10 +13,11 @@
     
     @font-face {
       font-family: 'GilroyLight';
-      src: urL(fonts/gilroy/Gilroylight.ttf)
+      src: url(fonts/gilroy/Gilroylight.ttf)
     }
   </style>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style-min.css">
 </head>
 
 <body class="inner-body">
@@ -151,7 +152,7 @@
             <fieldset class="bluetooth">
               <legend>Bluetooth</legend>
               <p>
-                <input type="radio" id="yes" name="Bluetooth">
+                <input type="radio" id="yes" name="Bluetooth" checked>
                 <label for="yes">Есть</label>
               </p>
               <p>
@@ -164,31 +165,47 @@
           <div class="catalog-items-wrapper">
             <div class="catalog-items">
               <div class="catalog-item">
-                <img src="img/item-1.jpg" alt="">
+                <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                <div class="catalog-item-action">
+                  <a href="#" class="btn">в корзину</a>
+                  <a href="#" class="add-to-compare">Добавить к сравнению</a>
+                </div>
                 <div class="catalog-item-description">
-                  <span>Любительская селфи-палка</span>
+                  <a href="#">Любительская селфи-палка</a>
                   <span>500 руб.</span>
                 </div>
               </div>
               <div class="catalog-item">
-                <img src="img/item-2.jpg" alt="">
+                <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
+                <div class="catalog-item-action">
+                  <a href="#" class="btn">в корзину</a>
+                  <a href="#" class="add-to-compare">Добавить к сравнению</a>
+                </div>
                 <div class="catalog-item-description">
-                  <span>Профессиональная селфи-палка </span>
+                  <a href="#">Профессиональная <br> селфи-палка</a>
                   <span>1 500 руб.</span>
                 </div>
               </div>
               <div class="catalog-item">
-                <img src="img/item-3.jpg" alt="">
+                <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+                <div class="catalog-item-action">
+                  <a href="#" class="btn">в корзину</a>
+                  <a href="#" class="add-to-compare">Добавить к сравнению</a>
+                </div>
                 <div class="catalog-item-description">
-                  <span>Непотопляемая селфи-палка</span>
+                  <a href="#">Непотопляемая селфи-палка</a>
                   <span>2 500 руб.</span>
                 </div>
               </div>
 
               <div class="catalog-item new">
-                <img src="img/item-4.jpg" alt="">
+                <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
+                <div class="catalog-item-action">
+                  <a href="#" class="btn">в корзину</a>
+                  <a href="#" class="add-to-compare">Добавить к сравнению</a>
+                </div>
                 <div class="catalog-item-description">
-                  <span>Селфи-палка «Следуй за мной»</span>
+                  <a href="#">Селфи-палка «Следуй за мной»</a>
                   <span>4 900 руб.</span>
                 </div>
               </div>
@@ -212,7 +229,7 @@
         <div class="footer-top">
           <a href="#" class="footer-logo">DEVICE</a>
           <div class="footer-user-block">
-            <a href="#" class="login">Войти</a>
+            <a href="#" class="login">Выйти</a>
             <a href="#" class="compare">Сравнить</a>
             <a href="#" class="bascket">Корзина</a>
           </div>
@@ -245,7 +262,7 @@
               <a class="tw" href="#">twitter</a>
             </li>
           </ul>
-          <a href="" class="copyright-logo">html academy</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-logo">html academy</a>
         </div>
       </div>
     </footer>
